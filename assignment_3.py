@@ -73,7 +73,7 @@ def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5/9
 
 # Input from user
-fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+fahrenheit = float(input('Enter temperature in Fahrenheit: '))
 
 # Convert to Celsius
 celsius = fahrenheit_to_celsius(fahrenheit)
