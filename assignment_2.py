@@ -22,17 +22,17 @@ def dataCheck(name,age,height,is_student):
 
     message = None
 
-    if not isinstance(name,str):
+     if type(name) != 'str':
         message = 'name is not a string'
 
-    if not isinstance(age,int):
+    if type(age) != 'int':
         message = 'age is not an int'
 
-    if not isinstance(height,float):
+    if type(height) != 'float':
         message = 'height is not a float'
 
-    if not isinstance(is_student,bool):
-        message = 'is_student is not a boolean'
+    if type(is_student) != 'bool':
+        message = 'is_student is not a boolean
     
     return message
 
@@ -79,7 +79,7 @@ ASSIGNMENT GOAL:
 
 '''
 
-name = input('Please enter a name: ')
+name = str(input('Please enter a name:'))
 age = int(input('Please enter an age: '))
 height = float(input('Please enter a height: '))
 is_student = bool(input('Please enter whether or not you are a student: '))
